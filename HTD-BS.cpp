@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	clock_t run_start;
 	int progress;
 
-	string graphFile = "Dataset/Partial/40-unique-threads-ask-ubuntu.txt";
+	string graphFile = "C:\\Users\\y4570\\Desktop\\Decomposition_hypergraph\\Dataset\\unique-high-primary-school.txt";
 
 	// Read data
 	start = clock();
@@ -100,11 +100,10 @@ int main(int argc, char *argv[])
                     ++ptr_j;
                 } else if (node_3 < node_4) {
                     ++b;
-					open_hyper_num+=1;
-					open_hyper_num2+=1;
+
                 } else {
                     ++ptr_j;
-					open_hyper_num2+=1;
+
                 }
             }
 
