@@ -264,6 +264,11 @@ void removeDuplicatesFromHyperedgeAdj(vector<vector<int>>& hyperedge_adj) {
     }
 }
 
+void removeDuplicatesFromSingleHyperedgeAdj(vector<int>& hyperedge_adj) {
+
+    hyperedge_adj.erase(unique(hyperedge_adj.begin(), hyperedge_adj.end()), hyperedge_adj.end());
+
+}
 
 void completeSymmetricValues(
     const std::vector<std::vector<int>>& hyperedge_adj,
@@ -386,8 +391,28 @@ vector<vector<int>> convertToVectorWithIndex(
                 if(Index_signal[i]==-1) Index_signal[i]=j;
             }
         }
-
+        if(Index_signal[i]==-1) Index_signal[i]=hyperedge_adj[i].size();
     }
+
+    return hyperedge_adj_set;
+}
+
+
+vector<int> convertToSingleVectorWithIndex(
+    int i,
+    const vector<int>& hyperedge_adj,
+    vector<int>& Index_signal
+) {
+    vector<int> hyperedge_adj_set;
+
+    for (int j=0;j<hyperedge_adj.size();++j) {
+        int neighbor=hyperedge_adj[j];
+        if (neighbor > i) {
+            if(Index_signal[i]==-1) Index_signal[i]=j;
+        }
+    }
+
+    
 
     return hyperedge_adj_set;
 }
