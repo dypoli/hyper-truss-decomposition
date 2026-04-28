@@ -45,9 +45,6 @@ int main(int argc, char *argv[])
 	int V = node2hyperedge.size(), E = hyperedge2node.size();
 	cout << "# of nodes: " << V << '\n';
 	cout << "# of hyperedges: " << E << '\n';
-	cout << "Reading data done: "
-		<< (double)(clock() - start) / CLOCKS_PER_SEC << " sec" << endl;
-	cout << "------------------------------------------" << endl << endl;
 
 
 
@@ -126,9 +123,7 @@ int main(int argc, char *argv[])
 
 
 
-    cout << "Adjacency list construction done: "
-    << (double)(clock() - start) / CLOCKS_PER_SEC << " sec" << endl;
-    cout << "------------------------------------------" << endl << endl;
+
 
 
     // support number counting and build  blooms structure
@@ -139,8 +134,7 @@ int main(int argc, char *argv[])
 	hyperedge_triangles.resize(E);
 
 
-	int check=0;
-	int check2=0;
+
 
 	vector<int> signal_firstlevel(E, -1);
 	vector<int> signal_secondlevel(E, -1);
@@ -344,9 +338,7 @@ int main(int argc, char *argv[])
   
 
 	
-    cout << "support list construction done: "
-    << (double)(clock() - start) / CLOCKS_PER_SEC << " sec" << endl;
-    cout << "------------------------------------------" << endl << endl;
+
 
 
     
@@ -371,7 +363,6 @@ int main(int argc, char *argv[])
     vector<int> count_signal(E,-1);
     repeat_Num.assign(E,0);
 
-    int checkcount=0;
 
     vector<int> fortest(E,0);
 
@@ -769,9 +760,11 @@ int main(int argc, char *argv[])
 
 
 
-    cout << "Trusness list construction done: "
-		<< (double)(clock() - start) / CLOCKS_PER_SEC << " sec" << endl;
-	cout << "------------------------------------------" << endl << endl;
+    for (int i = 0; i < 25; ++i) {
+        std::cout << "Hyperedge ID: " << i 
+                  << ", Trussness: " << Trussness[i] << "\n";
+    }
+    
 
 
 	return 0;
