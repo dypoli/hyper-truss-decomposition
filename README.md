@@ -66,3 +66,31 @@ The trussness of each hyperedge is stored in:
 
 `vector<int> Trussness`
 
+## Advanced Implementation (HTD-ADV+)
+
+
+### File
+
+- Source code: `HTD-ADV+.cpp`
+
+---
+
+### Input
+
+The input file is specified in the following line:
+
+string graphFile = "dblp_graph.txt";
+
+### Output
+
+The trussness of each hyperedge is stored in:
+
+`vector<int> Trussness`
+
+
+
+### Description
+
+This implementation corresponds to the optimized algorithm **HTD-ADV+**.
+
+It integrates the **Count-adv** algorithm for efficient hyper-triangle counting, together with the optimized peeling strategy proposed in our paper. 
