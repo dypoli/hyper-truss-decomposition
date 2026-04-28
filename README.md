@@ -20,7 +20,8 @@ For example:
 - \( e_4 = \{21,23,16\} \)
 - ...
 - \( e_{22} = \{100,101\} \)
-
+- ...
+  
 Each hyperedge contains a variable number of vertices.
 
 ### Description
