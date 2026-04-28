@@ -8,34 +8,18 @@ The input dataset is a **hypergraph**, where each line represents a hyperedge an
 
 ## Example
 
-Input file (`example.txt`):
-0,1,2,3
-6,7
-12,13
-21,23,16
-20,18
-24,22
-31,32
-33,34
-41,42
-46,47,1,45
-48,49
-52,53
-57,63,62,60
-64,67,65
-76,77
-79,80
-83,84
+Input file (`dblp_graph.txt`):
 
+This dataset defines a hypergraph \( H = (V, E) \), where each line corresponds to a hyperedge.
 
-This dataset defines a hypergraph \( H = (V, E) \), where each line corresponds to a hyperedge:
+For example:
 
 - \( e_1 = \{0,1,2,3\} \)
 - \( e_2 = \{6,7\} \)
 - \( e_3 = \{12,13\} \)
 - \( e_4 = \{21,23,16\} \)
 - ...
-- \( e_{17} = \{83,84\} \)
+- \( e_{22} = \{100,101\} \)
 
 Each hyperedge contains a variable number of vertices.
 
