@@ -6,7 +6,9 @@ code for the hyper-truss decomposition algorithm
 
 The input dataset is a **hypergraph**, where each line represents a hyperedge and contains a list of vertex IDs separated by commas.
 
-### Example
+## Example
+
+Input file (`example.txt`):
 0,1,2,3
 6,7
 12,13
@@ -18,6 +20,24 @@ The input dataset is a **hypergraph**, where each line represents a hyperedge an
 41,42
 46,47,1,45
 48,49
+52,53
+57,63,62,60
+64,67,65
+76,77
+79,80
+83,84
+
+
+This dataset defines a hypergraph \( H = (V, E) \), where each line corresponds to a hyperedge:
+
+- \( e_1 = \{0,1,2,3\} \)
+- \( e_2 = \{6,7\} \)
+- \( e_3 = \{12,13\} \)
+- \( e_4 = \{21,23,16\} \)
+- ...
+- \( e_{17} = \{83,84\} \)
+
+Each hyperedge contains a variable number of vertices.
 
 ### Description
 
