@@ -64,5 +64,5 @@ string graphFile = "dblp_graph.txt";
 
 The trussness of each hyperedge is stored in:
 
+`vector<int> Trussness`
 
-vector<int> Trussness;
