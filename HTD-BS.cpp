@@ -35,9 +35,7 @@ int main(int argc, char *argv[])
 	int V = node2hyperedge.size(), E = hyperedge2node.size();
 	cout << "# of nodes: " << V << '\n';
 	cout << "# of hyperedges: " << E << '\n';
-	cout << "Reading data done: "
-		<< (double)(clock() - start) / CLOCKS_PER_SEC << " sec" << endl;
-	cout << "------------------------------------------" << endl << endl;
+
 
 
 	// Make adjacency list
@@ -66,9 +64,7 @@ int main(int argc, char *argv[])
 	vector<unordered_set<int>> hyperedge_adjset = convertToSet(hyperedge_adj);
 	vector<vector<int>> hyperedge_adj_filtered=convertToVectorFilteredByIndex(hyperedge_adj);
 
-	cout << "Adjacency list construction done: "
-		<< (double)(clock() - start) / CLOCKS_PER_SEC << " sec" << endl;
-	cout << "------------------------------------------" << endl << endl;
+
 
 
 
@@ -112,10 +108,7 @@ int main(int argc, char *argv[])
 
 	
 	
-	
-	cout << "support list construction done: "
-		<< (double)(clock() - start) / CLOCKS_PER_SEC << " sec" << endl;
-	cout << "------------------------------------------" << endl << endl;
+
 
     start = clock(); run_start = clock();
 
@@ -183,9 +176,10 @@ int main(int argc, char *argv[])
     }
 
 
-    cout << "Trusness list construction done: "
-		<< (double)(clock() - start) / CLOCKS_PER_SEC << " sec" << endl;
-	cout << "------------------------------------------" << endl << endl;
+    for (int i = 0; i < 25; ++i) {
+        std::cout << "Hyperedge ID: " << i 
+                  << ", Trussness: " << Trussness[i] << "\n";
+    }
 
 
 
