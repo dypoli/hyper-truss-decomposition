@@ -7,7 +7,7 @@ code for the hyper-truss decomposition algorithm
 The input dataset is a **hypergraph**, where each line represents a hyperedge and contains a list of vertex IDs separated by commas.
 
 ### Example
-0,1,2,3\\
+0,1,2,3
 6,7
 12,13
 21,23,16
