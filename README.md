@@ -106,7 +106,7 @@ For the hyper-triangle counting phase, the implementation includes:
 - **Count-sparse**, which is used to count sparse hyper-triangles  
 - **Count-dense**, which is used to count dense hyper-triangles  
 
-Together, these two components form **Count-adv**, which is capable of counting all hyper-triangles.
+Note that these two components together form **Count-adv**, which is capable of counting all hyper-triangles.
 
 to efficiently handle different types of hyper-triangles.
 
