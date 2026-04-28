@@ -111,3 +111,17 @@ Note that these two components together form **Count-adv**, which is capable of 
 to efficiently handle different types of hyper-triangles.
 
 For the peeling phase, we adopt the optimized strategy proposed in our paper to further improve efficiency.
+
+## How to Run
+
+### Compile
+
+Use `g++` to compile the source code:
+
+```bash
+g++ -o HTD-ADV+ HTD-ADV+.cpp
+./HTD-ADV+
+
+```bash
+g++ -o HTD-BS HTD-BS.cpp
+./HTD-BS
