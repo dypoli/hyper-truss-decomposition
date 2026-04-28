@@ -93,4 +93,19 @@ The trussness of each hyperedge is stored in:
 
 This implementation corresponds to the optimized algorithm **HTD-ADV+**.
 
-It integrates the **Count-adv** algorithm for efficient hyper-triangle counting, together with the optimized peeling strategy proposed in our paper. 
+The algorithm consists of three main phases:
+
+- **Preprocessing**
+- **Hyper-triangle counting**
+- **Peeling**
+
+For the preprocessing phase, we integrate it with the hyper-triangle counting phase. This design allows the algorithm to dynamically maintain only the necessary information of currently involved hyperedges, thereby reducing memory consumption (as demonstrated in the experimental section).
+
+For the hyper-triangle counting phase, the implementation incorporates both:
+
+- **Count-sparse**
+- **Count-dense (Count-adv)**
+
+to efficiently handle different types of hyper-triangles.
+
+For the peeling phase, we adopt the optimized strategy proposed in our paper to further improve efficiency.
