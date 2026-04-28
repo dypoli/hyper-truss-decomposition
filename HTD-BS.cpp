@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	clock_t run_start;
 	int progress;
 
-	string graphFile = "C:\\Users\\y4570\\Desktop\\Decomposition_hypergraph\\Dataset\\unique-high-primary-school.txt";
+	string graphFile = "dblp_graph.txt";
 
 	// Read data
 	start = clock();
