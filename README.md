@@ -99,7 +99,7 @@ The algorithm consists of three main phases:
 - **Hyper-triangle counting**
 - **Peeling**
 
-For the preprocessing phase, we integrate it with the hyper-triangle counting phase. This design allows the algorithm to dynamically maintain only the necessary information of currently involved hyperedges, thereby reducing memory consumption (as demonstrated in the experimental section).
+For the preprocessing phase, we integrate it with the hyper-triangle counting phase. This design allows the algorithm to dynamically maintain only the necessary information of currently processed hyperedges, thereby reducing memory consumption (as demonstrated in the experimental section).
 
 For the hyper-triangle counting phase, the implementation incorporates both:
 
