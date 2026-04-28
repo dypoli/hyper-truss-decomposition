@@ -101,10 +101,12 @@ The algorithm consists of three main phases:
 
 For the preprocessing phase, we integrate it with the hyper-triangle counting phase. This design allows the algorithm to dynamically maintain only the necessary information of currently processed hyperedges, thereby reducing memory consumption (as demonstrated in the experimental section).
 
-For the hyper-triangle counting phase, the implementation incorporates both:
+For the hyper-triangle counting phase, the implementation includes:
 
-- **Count-sparse**
-- **Count-dense (Count-adv)**
+- **Count-sparse**, which is used to count sparse hyper-triangles  
+- **Count-dense**, which is used to count dense hyper-triangles  
+
+Together, these two components form **Count-adv**, which is capable of counting all hyper-triangles.
 
 to efficiently handle different types of hyper-triangles.
 
