@@ -45,4 +45,24 @@ For additional real-world hypergraph datasets, please refer to:
   https://www.cs.cornell.edu/~arb/data/
 
 
-  
+## Basic Implementation (HTD-BS)
+
+
+### File
+
+- Source code: `HTD-BS.cpp`
+
+---
+
+### Input
+
+The input file is specified in the following line:
+
+string graphFile = "dblp_graph.txt";
+
+### Output
+
+The trussness of each hyperedge is stored in:
+
+```cpp
+vector<int> Trussness;
