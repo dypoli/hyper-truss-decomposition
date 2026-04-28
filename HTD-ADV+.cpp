@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	int progress;
 
     
-    string graphFile = "Dataset/Partial/40-unique-threads-ask-ubuntu.txt";
+    string graphFile = "dblp_graph.txt";
 
 
 	// Read data
