@@ -122,6 +122,6 @@ Use `g++` to compile the source code:
 g++ -o HTD-ADV+ HTD-ADV+.cpp
 ./HTD-ADV+
 
-```bash
+
 g++ -o HTD-BS HTD-BS.cpp
 ./HTD-BS
